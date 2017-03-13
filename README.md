@@ -13,7 +13,7 @@ Steps to run this application<br>
 <br>
 Using JSEncrypt library in the front end.<br>
 As Mentioned, have used expressJS and RequireJS. <br>
-Using Node RSA key generation and decryption<br>
+Using Node RSA for key generation and decryption<br>
 <br>
 Thanks,<br>
 Nischay M
