@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pingup</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-controller="MainController as Model">
+    <div class="container">
+        <h1>Pingup</h1>
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td style="text-align: center">
+                        input:
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" ng-model="Model.input">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <button type="submit" class="btn btn-default " ng-click="Model.encrypt()">submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="script/jsencrypt-master/bin/jsencrypt.js"></script>
+<script data-main="script/main" src="script/require.js"></script>
+</html>

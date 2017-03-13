@@ -1,0 +1,22 @@
+{
+  "name": "pingup",
+  "version": "1.0.0",
+  "description": "pingup coding challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "pingup",
+    "nodejs"
+  ],
+  "author": "Nischay Maridevegowda",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "node-rsa": "^0.4.2",
+    "requirejs": "^2.3.3"
+  }
+}
