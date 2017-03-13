@@ -21,7 +21,7 @@
         // serving the public key
         app.get('/getPublicKey/', function(req, res) {
             const publicKeyJson = {"Key": ""};
-            console.log(myDecrypter.exportKey('public'));
+            console.log(`\n ${myDecrypter.exportKey('public')}`);
             publicKeyJson.Key = myDecrypter.exportKey('public');
             res.json(JSON.stringify(publicKeyJson));
         });
@@ -29,10 +29,11 @@
         // receives encrypted data
         // decrypts data
         app.post('/sendEncryptedData/', function(req, res) {
-            console.log(`got the Encrypted data ${req.body.encrypted}`);
+            console.log(`\n The Encrypted data: \n ${req.body.encrypted} \n`);
             const EncryptedData = req.body.encrypted;
+            console.log(`\n ${myDecrypter.exportKey('private')}`);
             const clearMessage = myDecrypter.decrypt(EncryptedData, 'utf8');
-            console.log(clearMessage);
+            console.log(`\n Decrypted Text : ${clearMessage}`);
             res.send(clearMessage);
         });
         return app;
